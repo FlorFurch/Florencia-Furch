@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <h1>Florencia Furch</h1>
+        <nav>
+            <a class="btn" href="index.html"> Inicio</a>
+            <a class="btn" href="acercade.html">Acerca de</a>
+            <a class="btn" href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section> <h2>Ponete en contacto</h2>
+            <p>Enviame un mensaje y a la brevedad me comunico con vos.</p>
+            
+        <form>
+            <label>Nombre<input id="nombre" class="input-form" name="Nombre" type="text" maxlength="20"
+                    required></label>
+            <label>Apellido<input id="apellido" class="input-form" name="Apellido" type="text" maxlength="20"></label>
+            <label>Email<input id="email" class="input-form" name="E-mail" type="email"></label>
+            <label>Teléfono<input id="tel" class="input-form" name="Telefono" type="tel"
+                    placeholder="Ingrese sin el 0 y sin el 15"></label>
+            <label>Edad<input id="edad" class="input-form" name="Edad" type="number" min="16" max="120"></label>
+            <label>Dirección<textarea id="direccion" class="input-form" name="Direccion"></textarea></label>
+            <label>Provincia<input list="provincia" class="datalist-form">
+                <datalist id="provincia">
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Catamarca">Catamarca</option>
+                    <option value="Chaco">Chaco</option>
+                    <option value="Chubut">Chubut</option>
+                    <option value="Córdoba">Córdoba</option>
+                    <option value="Corrientes">Corrientes</option>
+                    <option value="Entre Ríos">Entre Ríos</option>
+                    <option value="Formosa">Formosa</option>
+                    <option value="Jujuy">Jujuy</option>
+                    <option value="La Pampa">La Pampa</option>
+                    <option value="La Rioja">La Rioja</option>
+                    <option value="Mendoza">Mendoza</option>
+                    <option value="Misiones">Misiones</option>
+                    <option value="Neuquén">Neuquén</option>
+                    <option value="Río Negro">Río Negro</option>
+                    <option value="Salta">Salta</option>
+                    <option value="San Juan">San Juan</option>
+                    <option value="San Luis">San Luis</option>
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    <option value="Santa Fe">Santa Fe</option>
+                    <option value="Santiago del Estero">Santiago del Estero</option>
+                    <option value="Tierra del Fuego">Tierra del Fuego</option>
+                    <option value="Tucumán">Tucumán</option>
+
+                </datalist>
+
+            </label>
+
+            <label for="codigo-postal">Código postal<input type="text" id="codigo-postal" name="codigo-postal"
+                    pattern="^[A-Z]\d{4}[A-Z]{3}$" required title="Formato: A1234ABC"></label>
+            <fieldset>
+                <legend>Método preferido de contacto</legend>
+                <label>Correo electrónico<input type="radio" value="Correo electrónico" checked></label>
+                <label>Correo postal<input type="radio" value="Correo postal"></label>
+                <label>Teléfono<input type="radio" value="Teléfono"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tipo de suscripción</legend>
+                <label>Noticias<input type="checkbox" value="Noticias"></label>
+                <label>Promociones<input type="checkbox" value="Promociones"></label>
+                <label>Alertas<input type="checkbox" value="Alertas" checked></label>
+                <label>Eventos<input type="checkbox" value="Eventos"></label>
+            </fieldset>
+            <button class="boton-form">Cargar</button>
+        </form>
+
+    
+        <table>
+            <thead>
+                <tr>
+                <th>Campo</th>
+                <th>Valor</th>
+            </tr>
+            </thead>
+            <tr>
+                <th>Nombre</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Apellido</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Teléfono</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Edad</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Dirección</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Provincia</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Código Postal</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Método de contacto</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Suscripción</th>
+                <td></td>
+            </tr>
+        </table>
+
+    </section>
+</main>
+    <footer>
+        <img src="https://web.curza.uncoma.edu.ar/images/logo_blanco.png" alt="logo">
+        <p>Centro Regional Universitario Zona Atlántica<br>
+            Monseñor Esandi y Ayacucho. Viedma(85009), Río Negro, Argentina.<br>
+
+            Teléfonos: +54-2920-422921/423772</p>
+    </footer>
+</body>
+
+</html>
