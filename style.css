@@ -1,66 +1,115 @@
 body {
     background-color: #eaeaea;
     margin: 0;
-    font-family: sans-serif;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
 }
 
-header {
-    background-color: #265073;
-    padding: 5em;
+
+
+.logo {
+    display: flex;
+    justify-content: left;
+}
+
+.nav {
+    list-style-type: none;
     margin: 0;
-}
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+  }
 
-header h1 {
-    width: 50%;
+  li {
     float: left;
-    display: contents;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
 
-}
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #1e425f
+  }
+  
+  .active {
+    background-color: #2D9596;
+  }
 
-nav {
+
+/*nav 
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  li {
+    float: left;
+    border-right:1px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #1e425f
+  }
+  
+  .active {
+    background-color: #2D9596;
+  }
+*/
+
+/*nav {
     font-size: medium;
     font-weight: 500;
     float: right;
     vertical-align: middle;
     display: flex;
+    justify-content: flex-end;
 }
 
 nav a {
     text-decoration: none;
     color: #eaeaea;
 
-}
-
-main {
-    padding: 5em 15em;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-}
+}*/
 
 
 
-h1 {
-    color: #eaeaea;
-    font-size: x-large;
-    text-transform: uppercase;
-    font-weight: 900;
-}
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #265073;
-    text-transform: uppercase;
-    font-weight: 100;
-}
 
 p {
     font-size: 16px;
     line-height: 28px;
     color: #222;
+}
+
+.primer-parrafo {
+    margin-top: 2em;
 }
 
 .resaltado {
@@ -91,16 +140,7 @@ section {
 }
 
 
-aside {
-    float: left;
-    padding: 0 35px;
-    display: block;
-}
 
-
-aside img {
-    border-radius: 100%;
-}
 
 
 .btn {
@@ -136,7 +176,6 @@ footer img {
 /* Estilo para contacto.html*/
 
 form {
-    width: 80%;
     margin: 100px auto;
     color: #222;
 }
@@ -206,4 +245,14 @@ thead th{
     font-weight: 700;
     }
 
+   
+
+
     
+
+   
+    
+
+
+
+      

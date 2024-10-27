@@ -1,31 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
     <title>Contacto</title>
 </head>
 
 <body>
-    <header>
-        <h1>Florencia Furch</h1>
-        <nav>
-            <a class="btn" href="index.html"> Inicio</a>
-            <a class="btn" href="acercade.html">Acerca de</a>
-            <a class="btn" href="contacto.html">Contacto</a>
-        </nav>
-    </header>
+    <header id="ancla">
+        <div class="row">
+          <div class="col-7 col-s-12 logo">
+            <div class="marquee">
+              <ul class="animacion">
+                <li><span class="text">Florencia Furch</span></li>
+              </ul>
+              <ul aria-hidden="true" class="animacion">
+                <li>
+                  <span class="text">Florencia Furch</span>
+                </li>
+              </ul>
+    
+            </div>
+            <div class="logo-animado">
+              <img src="/imgs/logo_azul.png" alt="logo" class="imagen">
+            </div>
+          </div>
+          <div class="col-5 col-s-12 menu">
+            <ul>
+              <li class="li-nav"><a href="index.html">Home</a></li>
+              <li class="li-nav"><a href="acercade.html">Acerca de</a></li>
+              <li class="li-nav"><a class="active" href="contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+    <div id="sticky">Whatsapp: +54 9 291 4623111</div>
     <main>
-        <section> <h2>Ponete en contacto</h2>
-            <p>Enviame un mensaje y a la brevedad me comunico con vos.</p>
-            
-        <form>
-            <label>Nombre<input id="nombre" class="input-form" name="Nombre" type="text" maxlength="20"
+        
+        <section class="row">
+            <div class="encabezado simple"> <h2>Ponete en contacto</h2>
+            <p>Enviame un mensaje y a la brevedad me comunico con vos.</p></div>
+
+
+           
+        <form class="col-12">
+            <label>Nombre (requerido)<input id="nombre" class="input-form" name="Nombre" type="text" maxlength="20"
                     required></label>
             <label>Apellido<input id="apellido" class="input-form" name="Apellido" type="text" maxlength="20"></label>
-            <label>Email<input id="email" class="input-form" name="E-mail" type="email"></label>
+            <label>Email (requerido)<input id="email" class="input-form" name="E-mail" type="email" required></label>
             <label>Teléfono<input id="tel" class="input-form" name="Telefono" type="tel"
                     placeholder="Ingrese sin el 0 y sin el 15"></label>
             <label>Edad<input id="edad" class="input-form" name="Edad" type="number" min="16" max="120"></label>
@@ -61,26 +93,25 @@
             </label>
 
             <label for="codigo-postal">Código postal<input type="text" id="codigo-postal" name="codigo-postal"
-                    pattern="^[A-Z]\d{4}[A-Z]{3}$" required title="Formato: A1234ABC"></label>
+                    pattern="[A-Z]\d{4}[A-Z]{3}" required title="Formato: A1234ABC"></label>
             <fieldset>
                 <legend>Método preferido de contacto</legend>
-                <label>Correo electrónico<input type="radio" value="Correo electrónico" checked></label>
-                <label>Correo postal<input type="radio" value="Correo postal"></label>
-                <label>Teléfono<input type="radio" value="Teléfono"></label>
+                <label>Correo electrónico<input name="contacto" type="radio" value="Correo electrónico" checked></label>
+                <label>Correo postal<input name="contacto" type="radio" value="Correo postal"></label>
+                <label>Teléfono<input name="contacto" type="radio" value="Teléfono"></label>
             </fieldset>
 
             <fieldset>
                 <legend>Tipo de suscripción</legend>
-                <label>Noticias<input type="checkbox" value="Noticias"></label>
-                <label>Promociones<input type="checkbox" value="Promociones"></label>
-                <label>Alertas<input type="checkbox" value="Alertas" checked></label>
-                <label>Eventos<input type="checkbox" value="Eventos"></label>
+                <label>Noticias<input name="suscripcion" type="checkbox" value="Noticias"></label>
+                <label>Promociones<input name="suscripcion" type="checkbox" value="Promociones"></label>
+                <label>Alertas<input name="suscripcion" type="checkbox" value="Alertas" checked></label>
+                <label>Eventos<input name="suscripcion" type="checkbox" value="Eventos"></label>
             </fieldset>
             <button class="boton-form">Cargar</button>
         </form>
-
     
-        <table>
+        <table class="col-12">
             <thead>
                 <tr>
                 <th>Campo</th>
@@ -128,9 +159,13 @@
                 <td></td>
             </tr>
         </table>
-
+   
     </section>
 </main>
+<div class="circulo"><a href="#ancla"> 
+    <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 181.17 181.46"><defs><style>.cls-1{fill:#fff;}</style></defs><title>right-arrow</title><path class="cls-1" d="M45.52,99.71c-12.29,0-24.19.05-36.08,0-6.79,0-11.22-6.32-8.75-12.37a11.61,11.61,0,0,1,2.55-3.64Q43.37,43.47,83.56,3.33C88-1.08,93-1.11,97.42,3.26Q137.71,43.5,178,83.78c2.94,2.94,4.08,6.33,2.48,10.22-1.71,4.17-5.4,5.61-9.55,5.66-10.68.12-21.37,0-32.06,0h-3.32v3.53c0,46.12,0,21,0,67.11,0,7.86-3.23,11.11-11.05,11.11H56.14c-7.27,0-10.61-3.36-10.61-10.69,0-46.21,0-21.18,0-67.39Z"/></svg>
+  </a>
+  </div>
     <footer>
         <img src="https://web.curza.uncoma.edu.ar/images/logo_blanco.png" alt="logo">
         <p>Centro Regional Universitario Zona Atlántica<br>
